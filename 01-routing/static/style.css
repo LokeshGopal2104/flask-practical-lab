@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+
+
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}

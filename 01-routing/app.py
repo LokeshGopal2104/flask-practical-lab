@@ -10,19 +10,19 @@ def home():
 
 @app.route("/about")
 def about():
-    return "About Me"
+    return render_template("about.html")
 
 @app.route("/skills")
 def skills():
-    return "My skills"
+    return render_template("skills.html")
 
 @app.route("/projects")
 def projects():
-    return "My projects"
+    return render_template("projects.html")
 
 @app.route("/contact")
 def contact():
-    return "My Contact"
+    return render_template("contact")
 
 
 if __name__ == "__main__":
