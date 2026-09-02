@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms-Post</title>
+</head>
+<body>
+    <form action="/greet" method = "POST">
+        <label for = "name">Name : </label>
+        <input
+            type = "text" 
+            name = "name"
+            id = "name"
+            placeholder="Enter your Name"
+        >
+
+        <label for = "age">Age : </label>
+        <input
+            type = "number" 
+            name = "age"
+            id = "age"
+            placeholder="Enter your Age"
+        >
+
+        <button type = "submit">Submit</button>
+    </form>
+
+    <div class="display">
+        Hello {{ name }} ! 
+        <br>
+
+        you are {{ age }} years old.
+    </div>
+</body>
+</html>
