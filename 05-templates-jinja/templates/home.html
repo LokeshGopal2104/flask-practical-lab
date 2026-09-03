@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% from "macros.html" import user_card %}
+
+{% block content %}
+
+    <h1>Welcome to my Home Page</h1>
+
+    {% for user in users %}
+        <div>
+            <span>{{ loop.index }}.</span>
+            {{ user_card(user.name, user.age) }}
+        </div>
+    {% endfor %}
+
+{% endblock %}
