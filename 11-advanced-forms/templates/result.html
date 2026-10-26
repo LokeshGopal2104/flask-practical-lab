@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Registration Successful!</h1>
+        <p class="subtitle">Here are your submitted registration details.</p>
+
+        <div class="form-group">
+            <p><strong>Student Name:</strong> {{ student_name }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>Age:</strong> {{ age }}</p>
+            <p><strong>Phone:</strong> {{ phone or "Not provided" }}</p>
+            <p><strong>Course:</strong> {{ course }}</p>
+            <p><strong>Study Mode:</strong> {{ study_mode }}</p>
+        </div>
+
+        <div class="form-group">
+            <h3>Selected Skills</h3>
+
+            {% if skills %}
+                <ul>
+                    {% for skill in skills %}
+                        <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No skills selected.</p>
+            {% endif %}
+        </div>
+
+        <a href="/">Register another student</a>
+
+    </div>
+
+</body>
+</html>
