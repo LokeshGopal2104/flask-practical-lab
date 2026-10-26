@@ -1,17 +1,14 @@
-
 # Task 11 — Advanced Forms
 
 ## Overview
-A student registration application built using Flask, HTML, CSS,
-and Jinja. This project demonstrates how to collect, validate,
-process, and display multiple form fields.
+A student registration application built using Flask, HTML, CSS, and Jinja. This project demonstrates how to collect, validate, process, and display multiple form fields.
 
 ## Learning Objectives
 - Handle multiple HTML form inputs.
 - Use dropdowns, radio buttons, and checkboxes.
 - Understand required and optional fields.
-- Retrieve submitted values using Flask request.form.
-- Retrieve multiple checkbox values using request.form.getlist().
+- Retrieve submitted values using `request.form.get()`.
+- Retrieve multiple checkbox values using `request.form.getlist()`.
 - Implement basic server-side validation.
 - Pass Python variables to Jinja templates.
 - Use Jinja variables, conditions, and loops.
@@ -27,6 +24,7 @@ process, and display multiple form fields.
 - Responsive CSS styling.
 
 ## Project Structure
+```text
 11-advanced-forms/
 ├── app.py
 ├── README.md
@@ -35,6 +33,7 @@ process, and display multiple form fields.
 └── templates/
     ├── register.html
     └── result.html
+```
 
 ## Technologies
 - Python
@@ -44,23 +43,23 @@ process, and display multiple form fields.
 - Jinja
 
 ## How to Run
-1. Activate your existing virtual environment, if applicable.
+1. Activate your virtual environment, if applicable.
 2. Install Flask if it is not already installed:
-   pip install flask
+   `pip install flask`
 3. Navigate to the task directory:
-   cd 11-advanced-forms
+   `cd 11-advanced-forms`
 4. Run the application:
-   python app.py
-5. Open http://127.0.0.1:5000/ in your browser.
+   `python app.py`
+5. Open `http://127.0.0.1:5000/` in your browser.
 
 ## Key Concepts
 - GET and POST methods
-- request.form.get()
-- request.form.getlist()
+- `request.form.get()`
+- `request.form.getlist()`
 - Server-side validation
-- render_template()
+- `render_template()`
 - Jinja variables, conditions, and loops
-- url_for() for static CSS files
+- `url_for()` for static CSS files
 
 ## Limitations
 - Submitted data is displayed but not saved to a database.
